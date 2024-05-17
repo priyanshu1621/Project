@@ -186,11 +186,8 @@ router.post('/create-order', async (req, res) => {
                         }
 
                         // Delete the entry from the seller table
-<<<<<<< HEAD
                         const deleteQuery = 'DELETE FROM seller WHERE Seller_Price = ? ';
-=======
-                        const deleteQuery = 'DELETE FROM seller WHERE Seller_Price = ? limit 1';
->>>>>>> c18c9a7da97f2d6b33160984e11f7931895e3f4e
+
                         const deleteValues = [buyerPrice];
 
                         connection.query(deleteQuery, deleteValues, (error, results, fields) => {
