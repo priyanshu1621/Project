@@ -15,9 +15,7 @@ const PORT = 3000;
 //    origin:`https://project-phi-blue.vercel.app`
 // }))
 
-app.use(cors({
-   origin:`https://project-phi-blue.vercel.app`
-}))
+app.use(cors())
 
 // Add body-parser middleware to parse incoming requests
 app.use(bodyParser.json());
