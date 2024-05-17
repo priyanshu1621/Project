@@ -1,0 +1,29 @@
+/* styles.css */
+
+.main-container {
+   
+        display: flex;
+        justify-content: center;
+    
+    
+}
+
+/* styles.css */
+.table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse; /* This collapses the table borders into a single border */
+    border: 1px solid #ccc; /* Add a solid border around the table */
+}
+
+/* Optional: Add padding to table cells */
+.table td, .table th {
+    padding: 8px;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+}
