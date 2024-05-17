@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7 overscroll-behavior: none; '>
+    <div >
 
       <section className="bg-gray-900 text-white">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
