@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const connection = require('../dbconnect');
 
-router.get('/', (req, res) => {
+router.get('/complete-order', (req, res) => {
     // Use the connection object to execute the SQL query
     connection.query('SELECT * FROM completed_orders', (error, results, fields) => {
         if (error) {

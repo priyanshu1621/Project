@@ -347,7 +347,7 @@ const router = express.Router();
 const connection = require('../dbconnect'); // Ensure this path is correct
 
 // Define route to fetch data from buyer and seller tables
-router.get('/', (req, res) => {
+router.get('/pending-order', (req, res) => {
     console.log("I'm inside routes pending");
 
     // Start a transaction

@@ -24,8 +24,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use('/pending-order', pending_orders);
-app.use('/complete-order', completed_orders);
+app.use('/', pending_orders);
+app.use('/', completed_orders);
 app.use('/', orderRoutes);
 
 
