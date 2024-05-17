@@ -11,7 +11,9 @@ const bodyParser = require('body-parser'); // Import body-parser
 const app = express();
 const PORT = 3000;
 
-app.use(cors())
+app.use(cors({
+   origin:`https://project-phi-blue.vercel.app`
+}))
 
 // Add body-parser middleware to parse incoming requests
 app.use(bodyParser.json());
