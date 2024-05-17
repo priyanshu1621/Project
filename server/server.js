@@ -28,9 +28,7 @@ app.use('/po', pending_orders);
 app.use('/co', completed_orders);
 app.use('/or', orderRoutes);
 
-app.get('/', () => {
-   console.log("It is a home page")
-} )
+
 
 app.listen(PORT, () => {
    console.log(`Server is running on port ${PORT}`);
