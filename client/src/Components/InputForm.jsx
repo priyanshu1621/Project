@@ -27,8 +27,8 @@ const OrderForm = () => {
             );
             console.log(response.data); // Log the response from the backend
             // Reset the form fields
-            setBuyerQuantity(''); 
-            
+            setBuyerQuantity('');
+
             setBuyerPrice('');
 
             window.location.reload();
@@ -41,14 +41,88 @@ const OrderForm = () => {
     return (
 
         <div>
-            <br></br>
-            <br></br>
-            
 
-            <h4 class='main-container'>Order Form</h4>
 
-            <br></br>
-        
+
+
+            <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-lg text-center">
+                    <h1 className="text-2xl font-bold sm:text-3xl">Order Input</h1>
+                </div>
+
+                <form class='form' onSubmit={handleSubmit} className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+                    <div>
+                        <label htmlFor="Buyer Quantity" className="sr-only">Buyer Quantity</label>
+
+                        <div className="relative w-18">
+                            <input
+                                type="text"
+                                id="buyerQuantity"
+                                value={buyerQuantity}
+                                placeholder="Buyer Quantity"
+                                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                                onChange={(e) => setBuyerQuantity(e.target.value)}
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label htmlFor="Buyer Price" className="sr-only">Buyer Price</label>
+
+                        <div className="relative">
+                            <input
+                                type="text"
+                                id="buyerPrice"
+                                value={buyerPrice}
+                                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                                placeholder="Buyer Price"
+
+                                onChange={(e) => setBuyerPrice(e.target.value)}
+                            />
+
+
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-between ">
+
+                        <button
+                            type="submit"
+                            className="inline-block rounded-lg bg-blue-500 px-5 py-3
+                             text-sm font-medium text-white"
+                        >
+                            Order
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <br></br>
+
             <form class='form' onSubmit={handleSubmit}>
 
                 <label htmlFor="buyerQuantity">Buyer Quantity:</label>
@@ -66,7 +140,7 @@ const OrderForm = () => {
                     onChange={(e) => setBuyerPrice(e.target.value)}
                 />
                 <button type="submit">Submit</button>
-            </form>
+            </form> */}
 
 
         </div>

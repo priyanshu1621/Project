@@ -36,10 +36,40 @@ const Pending_orderTable = () => {
 
     return (
         <div>
-        
-            <h4 class='main-container '>PENDING ORDER TABLES</h4>
 
-            <div class=''>
+            <h4 className='flex items-center justify-center text-x font-bold'>PENDING ORDER TABLES</h4>
+
+
+
+            <div className="flex justify-center">
+                <div className="overflow-x-auto rounded-lg border border-gray-200 mx-4 sm:mx-6 lg:mx-8" style={{ minWidth: '600px' }}>
+                    <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                        <thead className="ltr:text-left rtl:text-right">
+                            <tr>
+                                <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Buyer_Qty</th>
+                                <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Buyer_Price</th>
+                                <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Seller_Price</th>
+                                <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Seller_Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                            {data.slice(0, 5).map((d, index) => (
+                                <tr key={index}>
+                                    <td className="px-4 py-2">{d.Buyer_Qty}</td>
+                                    <td className="px-4 py-2">{d.Buyer_Price}</td>
+                                    <td className="px-4 py-2">{d.Seller_Price}</td>
+                                    <td className="px-4 py-2">{d.Seller_Qty}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+            {/* <div class=''>
 
 
                 <table class="table">
@@ -67,7 +97,7 @@ const Pending_orderTable = () => {
                     </tbody>
                 </table>
 
-            </div>
+            </div> */}
 
         </div>
     )

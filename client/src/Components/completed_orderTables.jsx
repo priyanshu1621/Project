@@ -20,8 +20,45 @@ const Completed_orderTables = () => {
 
     return (
         <div>
-                <h4 class='main-container '>COMPLETED ORDER TABLES</h4>
-            <div>
+            <h4 className='flex items-center justify-center text-x font-bold'>COMPLETED ORDER TABLES</h4>
+
+
+            <div className="flex justify-center">
+                <div className="overflow-x-auto rounded-lg border border-gray-200" style={{ minWidth: '600px' }}>
+                    <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                        <thead className="ltr:text-left rtl:text-right">
+                            <tr>
+                                <th className="whitespace-nowrap px-8 py-2 font-medium text-gray-900">Price</th>
+                                <th className="whitespace-nowrap px-2 py-2 font-medium text-gray-900">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                            {data.slice(0, 5).map((d, index) => (
+                                <tr key={index}>
+                                    <td className="px-12 py-2">{d.price}</td>
+                                    <td className="px-4 py-2">{d.quantity}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <br></br>
+            <br></br>
+            <br></br>
+
+
+
+
+
+
+
+
+
+
+            {/* <div>
                 <table className="table">
                     <thead>
                         <tr>
@@ -30,7 +67,7 @@ const Completed_orderTables = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        { data.slice(0, 5).map((d, index) => (
+                        {data.slice(0, 5).map((d, index) => (
                             <tr key={index}>
                                 <td>{d.price}</td>
                                 <td>{d.quantity}</td>
@@ -38,7 +75,7 @@ const Completed_orderTables = () => {
                         ))}
                     </tbody>
                 </table>
-            </div>
+            </div> */}
         </div>
     );
 };

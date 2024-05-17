@@ -36,3 +36,34 @@ app.listen(PORT, () => {
 
 
 
+
+
+
+
+
+
+// // app.use(cors({
+// //    origin:`https://project-phi-blue.vercel.app`
+// // }))
+
+// app.use(cors())
+
+// // Add body-parser middleware to parse incoming requests
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+
+
+// app.use('/po', pending_orders);
+// app.use('/co', completed_orders);
+// app.use('/or', orderRoutes);
+
+// app.get("/",(req,res)=>{
+//    res.send("this is home page")
+// });
+
+// app.listen(PORT, () => {
+//    console.log(`Server is running on port ${PORT}`);
+// });
+
+
+
