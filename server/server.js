@@ -28,7 +28,7 @@ app.use('/po', pending_orders);
 app.use('/co', completed_orders);
 app.use('/or', orderRoutes);
 
-app.use('/', () => {
+app.get('/', () => {
    console.log("It is a home page")
 } )
 
