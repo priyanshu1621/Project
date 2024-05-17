@@ -24,11 +24,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use('/', pending_orders);
-app.use('/', completed_orders);
-app.use('/', orderRoutes);
+app.use('/po', pending_orders);
+app.use('/co', completed_orders);
+app.use('/or', orderRoutes);
 
-
+app.use('/', () => {
+   console.log("It is a home page")
+} )
 
 app.listen(PORT, () => {
    console.log(`Server is running on port ${PORT}`);
