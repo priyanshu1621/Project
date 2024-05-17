@@ -136,7 +136,7 @@ router.post('/create-order', async (req, res) => {
                 console.log('Case 2: No sellers found with the same price and sufficient quantity as the buyer');
 
                 // Search for buyer price inside the seller table
-                const searchQuery = 'SELECT * FROM seller WHERE Seller_Price = ?';
+                const searchQuery = 'SELECT * FROM seller WHERE Seller_Price = ? limit 1';
                 const searchValues = [buyerPrice];
 
                 connection.query(searchQuery, searchValues, (error, results, fields) => {
