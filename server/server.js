@@ -29,7 +29,7 @@ app.use('/co', completed_orders);
 app.use('/or', orderRoutes);
 
 app.get("/",(req,res)=>{
-   res.send(<h1>this is home pagesir</h1>)
+   res.send("this is home page")
 });
 
 app.listen(PORT, () => {
