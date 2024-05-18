@@ -100,49 +100,6 @@ const OrderForm = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <br></br>
-
-            <form class='form' onSubmit={handleSubmit}>
-
-                <label htmlFor="buyerQuantity">Buyer Quantity:</label>
-                <input
-                    type="text"
-                    id="buyerQuantity"
-                    value={buyerQuantity}
-                    onChange={(e) => setBuyerQuantity(e.target.value)}
-                />
-                <label htmlFor="buyerPrice">Buyer Price:</label>
-                <input
-                    type="text"
-                    id="buyerPrice"
-                    value={buyerPrice}
-                    onChange={(e) => setBuyerPrice(e.target.value)}
-                />
-                <button type="submit">Submit</button>
-            </form> */}
-
-
         </div>
     );
 };
