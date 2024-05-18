@@ -69,35 +69,7 @@ const Pending_orderTable = () => {
 
 
 
-            {/* <div class=''>
-
-
-                <table class="table">
-                    <thead>
-                        
-                        <tr>
-                            <th scope="col">Buyer_Qty</th>
-                            <th scope="col">Buyer_Price</th>
-                            <th scope="col">Seller_Price</th>
-                            <th scope="col">Seller_Qty</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {
-                            data.slice(0, 5).map((d, index) => (
-                                <tr key={index}>
-                                    <td>{d.Buyer_Qty}</td>
-                                    <td>{d.Buyer_Price}</td>
-                                    <td>{d.Seller_Price}</td>
-                                    <td>{d.Seller_Qty}</td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
-
-            </div> */}
+           
 
         </div>
     )
