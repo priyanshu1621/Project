@@ -50,32 +50,6 @@ const Completed_orderTables = () => {
             <br></br>
 
 
-
-
-
-
-
-
-
-
-            {/* <div>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.slice(0, 5).map((d, index) => (
-                            <tr key={index}>
-                                <td>{d.price}</td>
-                                <td>{d.quantity}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div> */}
         </div>
     );
 };
